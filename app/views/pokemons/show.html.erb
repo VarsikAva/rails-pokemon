@@ -1,0 +1,5 @@
+<h1><%= @pokemon.name %></h1>
+
+<%= cl_image_tag @pokemon.photo.key %>
+
+<%= render 'pokeballs/form', pokemon: @pokemon %>

@@ -1,0 +1,11 @@
+<h1>Pokedex</h1>
+
+<ul>
+  <% @pokemons.each do |pokemon| %>
+    <li>
+      <%= pokemon.name %>
+      <%= cl_image_tag pokemon.photo.key %>
+    </li>
+  <% end %>
+</ul>
+In this example, <%= %> is used to output the value of a Ruby expression, and <% %> is used to execute Ruby code without outputting anything. The each method is used to iterate over the @pokemons array, and pokemon.name and pokemon.photo.key are used to display the name and photo of each Pokemon.
